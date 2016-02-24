@@ -44,6 +44,10 @@ int tree_maximum(struct node *root){
     return root->n;
 }
 
+struct node *successor(struct node *root){
+	
+}
+
 void tree_insert(struct node *root, int x){
     if(root != NULL){
         root = malloc(sizeof(struct node));
@@ -64,6 +68,8 @@ void dump_node(struct node *a, struct node *b){
     b->n = a->n;
     b->right = a->right;
 }
+
+void transplant(struct node *root, )
 
 void tree_delete(struct node *root, int x){
     struct node *to_del = tree_search(root, x);
